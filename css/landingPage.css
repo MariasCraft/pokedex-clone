@@ -1,0 +1,246 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Pokemon Solid Normal';
+  letter-spacing: 15px;
+}
+.hero{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.533),rgba(0, 0, 0, 0.5)),url(/Images/00160045.jpg);
+  /* background-image: url(/Images/00160045.jpg); */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.text-mobile{
+  display: none;
+}
+.text-desktop{
+  display: block;
+}
+.logo{
+  width: 300px;
+  cursor: pointer;
+}
+#collection{
+  /* color:#3B4CCA */
+  color: #ff462e;
+}
+#search{
+ /* color: #CC0000 */
+ color: rgb(255, 203, 5);
+}
+.navbar{
+  height: 13%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  margin: 2% 10% 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 20px;
+  padding: 3%;
+}
+.col-1{
+  flex-basis: 60%;
+  width: 100%;
+  
+}
+.col-2{
+  flex-basis: 35%;
+  z-index: 2;
+
+}
+.col-2 img{
+  width: 100%;
+}
+h1{
+  font-size: 75px;
+  margin: 10px 0 90px;
+  line-height: 80px;
+  color: rgb(255, 203, 5);
+}
+
+.pokemon img{
+  width: 75px;
+  animation: pokemon 7s linear infinite;
+}
+.pokemon img:nth-child(1){
+  animation-delay: 2s;
+}
+.pokemon img:nth-child(2){
+  animation-delay: 1s;
+}
+.pokemon img:nth-child(3){
+  animation-delay: 3s;
+}
+.pokemon img:nth-child(4){
+  animation-delay: 4.5s;
+}
+.pokemon img:nth-child(5){
+  animation-delay: 3s;
+}
+.pokemon img:nth-child(6){
+  animation-delay: 6s;
+}
+.pokemon img:nth-child(7){
+  animation-delay: 7s;
+}
+
+.get-Started-Btn{
+  text-decoration: none;
+  text-align: center;
+  color: rgb(255, 203, 5);
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+  transition: .5s;
+  width: 100%;
+  display: block;
+}
+.get-started-div{
+  width: 400px;
+}
+.get-Started-Btn:hover{
+  background-color: rgba(14, 14, 29, 0.533);
+  color: blue;
+}
+
+.pokemon{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: -70px;
+  margin-left: -7%;
+}
+
+/* KEYFRAMES */
+
+@keyframes pokemon{
+  0%{
+    transform: translateY(0);
+    opacity: .7;
+  }
+  50%{
+    
+    opacity: 1;
+  }
+  70%{
+    
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(-80vh);
+    opacity: 0;
+  }
+}
+
+/* ****************************MEDIA QUERY********************************** */
+
+@media only screen and (max-width: 600px){
+  .logo{
+   width: 100px;
+  }
+  .content{
+    line-height: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+  br {
+    display: none;
+  }
+  .content h1{
+    font-size: 30px;
+    margin-bottom: 15%;
+    padding: 0;
+    line-height: 40px;
+  }
+
+  .col-1{
+    flex-basis: 100%;
+  }
+  small{
+    color: white;
+    font-size: 24px;
+  }
+  .col-2{
+    flex-basis: 100%;
+  }
+  .col-2 img{
+    width: 70vw;
+    padding-left: 8%;
+  }
+ 
+}
+@media screen and (max-width:1005px){
+  .content{ 
+    flex-direction: column;
+    justify-content: center;
+    min-height: 65%;
+  }
+ h1{
+    font-size: 4em;
+    text-align: center;
+  }
+  .col-2 img{
+    height:350px
+  }
+  .get-started-div{
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+  }
+
+/* mobile view */
+@media screen and (max-width:515px) {
+    .content{
+      margin: 0px;
+      width: 95%;
+    }
+    .text-desktop{
+      display: none;
+    }
+    .text-mobile{
+      display: block;
+      padding: 10px 10px
+    }
+    .logo{
+      width: 200px;
+    }
+    .col-2 img{
+      height: 300px;
+    }
+  
+}
+
+
+@font-face {
+  font-family: 'Pokemon Hollow Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Pokemon Hollow Normal'), url('Pokemon Hollow.woff') format('woff');
+  }
+  
+
+  @font-face {
+  font-family: 'Pokemon Solid Normal';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Pokemon Solid Normal'), url('Pokemon Solid.woff') format('woff');
+  }

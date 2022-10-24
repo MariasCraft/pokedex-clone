@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&family=Fredoka+One&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+    letter-spacing: 1px;
+    /* color:#ffcb05 */
+}
+body{
+    background: radial-gradient(ellipse at left, #c40dd4, transparent),
+    radial-gradient(ellipse at right, #f7e70b, transparent);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+a{
+    text-decoration: none;
+}
+iconify-icon{
+    font-size: 20px;
+   
+  
+  }
+a img:not(.banner-wrapper img){
+    height: 100px;
+    width:70px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+    animation: floating 3s ease-in-out infinite
+}
+#pokemon-types img{
+    height:75px
+}
+#pokemon-name{
+    font-size: 3.0em;
+   
+}
+.pokemon-img{
+    height: 250px;
+}
+.pokemon-img img{
+    width: 240px;
+    height: 240px;
+}
+li{
+    white-space: nowrap;
+}
+li:not(:last-child){
+    margin-bottom: 10px;
+}
+ul{
+    list-style-type: none;
+}
+h3 a{
+    color: inherit;
+    text-decoration: none;
+}
+canvas{
+    height: 100%;
+    width: 100%;
+    flex-shrink: 2 !important;
+}
+.banner{
+    background-color: #fff;
+  }
+  .banner-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-basis: 1400px;
+  
+    height: 100px;
+    width: 45%;
+  }
+  .banner-wrapper img{
+    flex-shrink: 1;
+    height: 100px;
+    width: 100%;
+  }
+main{
+    width: 70vw;
+    min-height: 80vh;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+  
+  }
+
+  .navbar ul li a{
+  
+    color: #2b72b9;
+    letter-spacing: 2px;
+}
+    
+.navbar ul li a:hover{
+     color: #5a5957;
+}
+.navbar-nav a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+}
+  .navbar .nav-items ul{
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%; 
+   
+   }
+   .navs{
+    background-color: #fff;
+   }
+   @media screen and (max-width: 480px) {
+    .nav-con{
+      display: flex;
+      padding: 0px;
+     
+    }
+    .nav-items {
+        padding: 0
+    };
+    .navbar-nav{
+      margin-left: 0px !important
+    }
+    .nav-items ul{
+       margin-left: 0px;
+   
+    }
+    li:not(:last-child){
+        margin-bottom: 0px;
+        margin-right: 10px !important;
+      
+    }
+    .nav-items ul li a{
+        font-size: 14px;
+    }
+    
+  }
+  @media screen and (max-width: 800px) {
+   
+    .chart-wrap{
+        display: flex;
+        height: 250 !important;
+        width: 90%;
+        
+    }
+    .myChart{
+        height: 500px;
+    }
+    .stats ul{
+        padding-left: 0px;
+    }
+  }
+  @font-face {
+    font-family: 'Pokemon Hollow Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pokemon Hollow Normal'), url('Pokemon Hollow.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Pokemon Solid Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pokemon Solid Normal'), url('Pokemon Solid.woff') format('woff');
+    }
+    @keyframes floating {
+        from { transform: translate(0,  0px); }
+        65%  { transform: translate(0, 7px); }
+        to   { transform: translate(0, -0px); }    
+    }
+   

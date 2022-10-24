@@ -1,0 +1,240 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;1,400&family=Fredoka+One&family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+   
+    letter-spacing: 1px;
+
+}
+/* image slideshow adjustment */
+.d-block{
+  height: 400px;
+  margin-top: 30px;
+  border-radius: 15px;
+}
+.carousel-control-next-icon,.carousel-control-prev-icon{
+  filter: invert(100%);
+  position: absolute;
+  
+}
+.content{
+  color: #3a5da8;
+}
+
+body{
+  background: radial-gradient(ellipse at left, #c40dd4, transparent),
+  radial-gradient(ellipse at right, #f7e70b, transparent);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+.svg{
+ /* background-color: #2b72b9; */
+ position: relative;
+ left: 50%;
+ -webkit-transform: translateX(-50%);
+ -ms-transform: translateX(-50%);
+ transform: translateX(-50%);
+ 
+}
+
+
+h1{
+  text-align: center;
+  color: #5a5957;
+ 
+
+}
+.bg-light{
+    background-color: transparent !important;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.navbar ul li a{
+    
+    color: #3a5da8;
+    letter-spacing: 2px;
+}
+
+.navbar ul li a:hover{
+    color: #5a5957;
+}
+.navbar-nav a{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+/* .back-video{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+} */
+em{
+  letter-spacing: 1px;
+}
+p{
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+/* @media (min-aspect-ratio: 16/9){
+	.back-video{
+		width: 100%;
+		height: auto;
+	}
+}
+@media (max-aspect-ratio: 16/9){
+	.back-video{
+		width: auto;
+		height: 100%;
+	}
+} */
+.newsfeed{
+  position: relative;
+
+  color: rgb(29, 28, 28);
+  
+}
+.banner{
+  background-color: #fff;
+}
+.banner-wrapper{
+  display: flex;
+  justify-content: center;
+  flex-basis: 1400px;
+
+  height: 100px;
+  width: 45%;
+}
+.banner-wrapper img{
+  flex-shrink: 1;
+  height: 100px;
+  width: 100%;
+}
+main{
+  min-height: 80vh;
+  width: 70vw; 
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.navbar ul li a{
+  
+  color: #2b72b9;
+  letter-spacing: 2px;
+}
+  
+.navbar ul li a:hover{
+   color: #5a5957;
+}
+.navbar-nav a{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Fira Sans', sans-serif;
+}
+.navbar .nav-items ul{
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%; 
+ 
+ }
+ .navs{
+  background-color: #fff;
+ }
+
+.panel-intro{
+  background-color: #f0f0f0;
+  border-radius: 5px
+}
+iconify-icon{
+  font-size: 20px;
+ 
+
+}
+
+.card-img-top {
+  border: black 2px dotted;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 480px) {
+  .nav-con{
+    display: flex;
+    padding: 0px;
+   
+  }
+  .nav-items {
+      padding: 0
+  };
+  .navbar-nav{
+    margin-left: 0px !important
+  }
+  .nav-items ul{
+     margin-left: 0px;
+ 
+  }
+  li:not(:last-child){
+      margin-bottom: 0px;
+      margin-right: 10px !important;
+    
+  }
+  .nav-items ul li a{
+      font-size: 14px;
+  }
+  
+}
+
+/* FONT FAMILY */
+@font-face {
+    font-family: 'Pokemon Hollow Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pokemon Hollow Normal'), url('Pokemon Hollow.woff') format('woff');
+    }
+    
+
+    @font-face {
+    font-family: 'Pokemon Solid Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Pokemon Solid Normal'), url('Pokemon Solid.woff') format('woff');
+    }
+    
+  /* h1{
+    font-family:'Pokemon Hollow Normal';
+    font-weight:normal;font-size:100px;
+    
+  }
+  h2{
+    font-family:'Pokemon Solid Normal';
+    font-weight:normal;font-size:100px;
+    
+  }
+  p{
+    font-family:'Pokemon Solid Normal';
+    font-weight:normal;font-size:100px
+  } */
+  @media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+      
+    }
+    .navbar-light .navbar-brand{
+        color: white;
+    }
+
+}
+@media screen and (max-width:1000px) {
+ 
+}
